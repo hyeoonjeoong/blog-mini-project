@@ -37,13 +37,13 @@ const DUMMYPosting = [
   },
 ];
 
-const MainPostingBox = () => {
+const MainPostBox = () => {
   return (
     <>
       {DUMMYPosting.length === 0 ? (
         <p>포스팅 내용이 존재하지 않습니다.</p>
       ) : (
-        <div>
+        <div className="mainPostBox">
           {DUMMYPosting.map((post) => (
             <PostCard key={post.postingId} post={post} />
           ))}
@@ -53,4 +53,4 @@ const MainPostingBox = () => {
   );
 };
 
-export default MainPostingBox;
+export default MainPostBox;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PostingCard = ({ post }) => {
+const PostCard = ({ post }) => {
   return (
     <>
       <div className="postingCard">
@@ -22,4 +22,4 @@ const PostingCard = ({ post }) => {
   );
 };
 
-export default PostingCard;
+export default PostCard;
