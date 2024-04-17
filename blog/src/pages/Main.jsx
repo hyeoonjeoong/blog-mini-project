@@ -1,7 +1,12 @@
 import React from "react";
+import MainPostBox from "../components/main/MainPostBox";
 
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <>
+      <MainPostBox />
+    </>
+  );
 };
 
 export default Main;
