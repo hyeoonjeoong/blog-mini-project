@@ -4,6 +4,7 @@ import Header from "./components/common/Header";
 import Main from "./pages/Main";
 import Write from "./pages/Write";
 import PostingDetail from "./pages/PostingDetail";
+import MyPage from "./pages/MyPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/write" element={<Write />} />
         <Route path="/post/:postId" element={<PostingDetail />} />
+        <Route path="/myPage" element={<MyPage />} />
       </Routes>
     </>
   );
