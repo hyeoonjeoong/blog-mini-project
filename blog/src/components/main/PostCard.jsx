@@ -3,10 +3,11 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const PostCard = ({ post }) => {
   const navigate = useNavigate();
-  const params = useParams();
 
   const clickPostCard = () => {
-    navigate("/post/${props.postingId}");
+    navigate("/post/${props.postingId}", {
+      state: { postingId: post.postingId },
+    });
   };
   return (
     <>
