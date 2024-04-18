@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const PostCard = ({ post }) => {
+  const navigate = useNavigate();
+  const params = useParams();
+
+  const clickPostCard = () => {
+    navigate("/post/${props.postingId}");
+  };
   return (
     <>
       <div className="postingCard">
@@ -8,7 +15,7 @@ const PostCard = ({ post }) => {
           <div>title: {post.title}</div>
           <div>🩵 {post.like}</div>
         </div>
-        <div className="postingBody">
+        <div className="postingBody" onClick={clickPostCard}>
           <div>content: {post.content}</div>
           <div>postingId: {post.postingId}</div>
         </div>

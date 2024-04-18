@@ -1,0 +1,136 @@
+{
+  "postings": [
+    {
+      "postingId": 1,
+      "like": 2,
+      "title": "포스팅 제목임",
+      "content": "블로그 프로젝트입니다. ",
+      "user": {
+        "userId": 1,
+        "nickname": "Happy Cookie",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 2,
+      "like": 20,
+      "title": "포스팅 제목제목",
+      "content": "근데 연습이라서 간단하게",
+      "user": {
+        "userId": 1,
+        "nickname": "Happy Cookie",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 3,
+      "like": 5,
+      "title": "이건 포스팅 타이틀",
+      "content": "어떠케할까",
+      "user": {
+        "userId": 2,
+        "nickname": "모카는 고양이",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 4,
+      "like": 23,
+      "title": "포스팅 제목임",
+      "content": "블로그 프로젝트입니다. ",
+      "user": {
+        "userId": 3,
+        "nickname": "Happy",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 5,
+      "like": 10,
+      "title": "포스팅 제목제목",
+      "content": "근데 연습이라서 간단하게",
+      "user": {
+        "userId": 3,
+        "nickname": "Happy Cookie",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 6,
+      "like": 45,
+      "title": "이건 포스팅 타이틀",
+      "content": "어떠케할까",
+      "user": {
+        "userId": 4,
+        "nickname": "냥냥고양이22",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 7,
+      "like": 9,
+      "title": "포스팅 제목임",
+      "content": "블로그 프로젝트입니다. ",
+      "user": {
+        "userId": 5,
+        "nickname": "오오오5",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 8,
+      "like": 20,
+      "title": "포스팅 제목제목",
+      "content": "근데 연습이라서 간단하게",
+      "user": {
+        "userId": 6,
+        "nickname": "루피하이",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 9,
+      "like": 5,
+      "title": "이건 루피하이 포스팅 타이틀",
+      "content": "루피하이어떠케할까",
+      "user": {
+        "userId": 6,
+        "nickname": "루피하이",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 10,
+      "like": 3,
+      "title": "포스팅 제목임",
+      "content": "블로그 프로젝트입니다. ",
+      "user": {
+        "userId": 7,
+        "nickname": "럭키쎄븐",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 11,
+      "like": 16,
+      "title": "포스팅 제목제목",
+      "content": "근데 연습이라서 간단하게",
+      "user": {
+        "userId": 8,
+        "nickname": "하이히히히",
+        "profileImg": null
+      }
+    },
+    {
+      "postingId": 12,
+      "like": 25,
+      "title": "이건 99포스팅 타이틀",
+      "content": "어떠케할까",
+      "user": {
+        "userId": 9,
+        "nickname": "나는9번",
+        "profileImg": null
+      }
+    }
+  ]
+}
