@@ -11,13 +11,13 @@ const PostingDetail = () => {
   useEffect(() => {
     getPostingDetail(state.postingId)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setPost(res);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(state);
+  // console.log(state);
   return (
     <>
       <h2>PostingDetail</h2>

@@ -9,7 +9,7 @@ const MainPostBox = () => {
     getPostingLists()
       .then((res) => {
         setPostingList(res);
-        console.log("postingList", res);
+        //console.log("postingList", res);
       })
       .catch((err) => console.log(err));
   }, []);
