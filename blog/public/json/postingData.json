@@ -5,6 +5,7 @@
       "like": 2,
       "title": "포스팅 제목임",
       "content": "블로그 프로젝트입니다. ",
+      "thumbnail": null,
       "user": {
         "userId": 1,
         "nickname": "Happy Cookie",
@@ -16,6 +17,7 @@
       "like": 20,
       "title": "포스팅 제목제목",
       "content": "근데 연습이라서 간단하게",
+      "thumbnail": null,
       "user": {
         "userId": 1,
         "nickname": "Happy Cookie",
@@ -27,6 +29,7 @@
       "like": 5,
       "title": "이건 포스팅 타이틀",
       "content": "어떠케할까",
+      "thumbnail": null,
       "user": {
         "userId": 2,
         "nickname": "모카는 고양이",
@@ -38,6 +41,7 @@
       "like": 23,
       "title": "포스팅 제목임",
       "content": "블로그 프로젝트입니다. ",
+      "thumbnail": null,
       "user": {
         "userId": 3,
         "nickname": "Happy",
@@ -49,6 +53,7 @@
       "like": 10,
       "title": "포스팅 제목제목",
       "content": "근데 연습이라서 간단하게",
+      "thumbnail": null,
       "user": {
         "userId": 3,
         "nickname": "Happy Cookie",
@@ -60,6 +65,7 @@
       "like": 45,
       "title": "이건 포스팅 타이틀",
       "content": "어떠케할까",
+      "thumbnail": null,
       "user": {
         "userId": 4,
         "nickname": "냥냥고양이22",
@@ -71,6 +77,7 @@
       "like": 9,
       "title": "포스팅 제목임",
       "content": "블로그 프로젝트입니다. ",
+      "thumbnail": null,
       "user": {
         "userId": 5,
         "nickname": "오오오5",
@@ -93,6 +100,7 @@
       "like": 5,
       "title": "이건 루피하이 포스팅 타이틀",
       "content": "루피하이어떠케할까",
+      "thumbnail": null,
       "user": {
         "userId": 6,
         "nickname": "루피하이",
@@ -104,6 +112,7 @@
       "like": 3,
       "title": "포스팅 제목임",
       "content": "블로그 프로젝트입니다. ",
+      "thumbnail": null,
       "user": {
         "userId": 7,
         "nickname": "럭키쎄븐",
@@ -115,6 +124,7 @@
       "like": 16,
       "title": "포스팅 제목제목",
       "content": "근데 연습이라서 간단하게",
+      "thumbnail": null,
       "user": {
         "userId": 8,
         "nickname": "하이히히히",
@@ -126,6 +136,7 @@
       "like": 25,
       "title": "이건 99포스팅 타이틀",
       "content": "어떠케할까",
+      "thumbnail": null,
       "user": {
         "userId": 9,
         "nickname": "나는9번",

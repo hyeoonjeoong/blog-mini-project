@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//포스트 전체 목록 가져오기
 export const getPostingLists = async () => {
   try {
     const res = await axios.get("/json/postingData.json");
@@ -10,6 +11,7 @@ export const getPostingLists = async () => {
   }
 };
 
+//포스트 상세 페이지 내용 가져오기
 export const getPostingDetail = async (postingId) => {
   try {
     const res = await axios.get("/json/postingData.json");
@@ -22,6 +24,7 @@ export const getPostingDetail = async (postingId) => {
   }
 };
 
+//포스트 좋아요 개수 가져오기
 export const getPostingLike = async (postingId) => {
   try {
     const res = await axios.get("/json/postingData.json");

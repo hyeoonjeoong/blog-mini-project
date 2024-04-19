@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getPostingLike } from "../../apis/blog";
+import userIcon from "../../assets/user.png";
+import LoadThumbnail from "../common/LoadThumbnail";
 
 const PostCard = ({ post }) => {
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ const PostCard = ({ post }) => {
     <>
       <div className="postingCard">
         <div className="postingHeader">
-          <div>title: {post.title}</div>
+          <div> {post.title}</div>
           <div
             onClick={() => clickLike(post)}
             style={{ color: isFavorite === true ? "#496989" : "#D6DAC8" }}
@@ -38,13 +40,17 @@ const PostCard = ({ post }) => {
           </div>
         </div>
         <div className="postingBody" onClick={clickPostCard}>
-          <div>content: {post.content}</div>
-          <div>postingId: {post.postingId}</div>
+          {post.user.thumbnail ? (
+            <img src={post.user.thumbnail} alt="img" />
+          ) : (
+            <LoadThumbnail />
+          )}
+
+          <div> {post.content}</div>
         </div>
         <div className="postingFooter">
-          <div>userId: {post.user.userId}</div>
-          <div>nickname: {post.user.nickname}</div>
-          <div>profileImg: {post.user.profileImg}</div>
+          <img src={post.user.profileImg || userIcon} alt="img" />
+          <span>{post.user.nickname}</span>
         </div>
       </div>
     </>
