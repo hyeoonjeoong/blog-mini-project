@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { getPostingDetail } from "../apis/blog";
+import userIcon from "../assets/user.png";
 
 const PostingDetail = () => {
   const location = useLocation();
@@ -20,18 +21,21 @@ const PostingDetail = () => {
   // console.log(state);
   return (
     <>
-      <h2>PostingDetail</h2>
-      <div>
+      <div className="postingDetailContainer">
         {post && (
           <>
-            <div>title: {post.title}</div>
+            <div className="title">{post.title}</div>
             <hr />
-            <div>profileImg: {post.user.profileImg}</div>
-            <div>nickname: {post.user.nickname}</div>
+            <div className="writerBox">
+              <div>
+                <img src={post.user.profileImg || userIcon} alt="img" />
+              </div>
+              <div>{post.user.nickname}</div>
+            </div>
             <hr />
-            <div>content: {post.content}</div>
+            <div className="detailContent">{post.content}</div>
             <hr />
-            <div>🩵 {post.like}</div>
+            <div className="detailLike">🩵 {post.like}</div>
           </>
         )}
       </div>

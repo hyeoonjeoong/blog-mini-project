@@ -109,3 +109,49 @@ code {
   width: 100%;
   height: 200px;
 }
+
+.postingDetailContainer {
+  margin: 3px auto;
+  margin-top: 5rem;
+}
+.postingDetailContainer .postingHeader {
+  margin-bottom: 6px;
+}
+.postingDetailContainer .title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.postingDetailContainer .writerBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+
+.writerBox div {
+  margin-right: 10px;
+}
+
+.writerBox img {
+  width: 25px;
+}
+
+.postingDetailContainer .detailContent {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  padding: 50px 10px;
+  background-color: antiquewhite;
+}
+
+.postingDetailContainer .detailLike {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20px;
+}
