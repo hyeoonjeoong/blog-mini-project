@@ -31,7 +31,7 @@ const PostCard = ({ post }) => {
     <>
       <div className="postingCard">
         <div className="postingHeader">
-          <div> {post.title}</div>
+          <div> {post.title.slice(0, 15)}..</div>
           <div
             onClick={() => clickLike(post)}
             style={{ color: isFavorite === true ? "#496989" : "#D6DAC8" }}
@@ -46,7 +46,7 @@ const PostCard = ({ post }) => {
             <LoadThumbnail />
           )}
 
-          <div> {post.content}</div>
+          <div> {post.content.slice(0, 100)}..</div>
         </div>
         <div className="postingFooter">
           <img src={post.user.profileImg || userIcon} alt="img" />
