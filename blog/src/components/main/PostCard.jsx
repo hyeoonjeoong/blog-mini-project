@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getPostingLike } from "../../apis/blog";
 import userIcon from "../../assets/user.png";
 import LoadThumbnail from "../common/LoadThumbnail";

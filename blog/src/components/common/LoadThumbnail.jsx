@@ -31,7 +31,7 @@ const LoadThumbnail = () => {
         {chosenImage && (
           <img
             src={require(`../../assets/img/${chosenImage}`)}
-            alt="Random Image"
+            alt=""
             className="thumbnail"
           />
         )}
