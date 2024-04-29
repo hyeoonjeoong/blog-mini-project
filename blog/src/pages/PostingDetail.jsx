@@ -11,6 +11,9 @@ const PostingDetail = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
+    console.log(state);
+  }, []);
+  useEffect(() => {
     getPostingDetail(state.postingId)
       .then((res) => {
         console.log(res);
