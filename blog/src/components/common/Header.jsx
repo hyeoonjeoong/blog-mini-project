@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
+import Search from "./Search";
 
 const Header = () => {
+  const [isSearch, setIsSearch] = useState(false);
   const handleClickSearch = () => {
-    alert("검색 버튼 클릭");
+    setIsSearch(true);
   };
   return (
     <>
@@ -27,6 +29,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
+      {isSearch && <Search />}
     </>
   );
 };

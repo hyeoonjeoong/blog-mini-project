@@ -43,7 +43,8 @@ const PostingDetail = () => {
             </div>
           </>
         )}
-        {state && (
+        {/* useEffect 조건 추가 필요 */}
+        {/* {state && (
           <>
             <div className="postingHeader">
               <div className="thumbnail">
@@ -58,7 +59,7 @@ const PostingDetail = () => {
               <button> ♥ </button>
             </div>
           </>
-        )}
+        )} */}
       </div>
     </>
   );

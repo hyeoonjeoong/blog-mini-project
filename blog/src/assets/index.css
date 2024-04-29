@@ -207,3 +207,16 @@ code {
   border: none;
   border-radius: 8px;
 }
+
+/* ----------SearchBoxContainer---------- */
+.searchBoxWrapper {
+  display: flex;
+  justify-content: center;
+}
+.searchBoxContainer {
+  width: 800px;
+  height: 150px;
+  border: 1px solid #9cafaa;
+  background-color: #eeeeee;
+  position: fixed;
+}
