@@ -11,9 +11,6 @@ const PostingDetail = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    console.log(state);
-  }, []);
-  useEffect(() => {
     getPostingDetail(state.postingId)
       .then((res) => {
         console.log(res);
@@ -22,7 +19,6 @@ const PostingDetail = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  // console.log(state);
   return (
     <>
       <div className="postingDetailContainer">
@@ -44,6 +40,22 @@ const PostingDetail = () => {
             <div className="detailContent">{post.content}</div>
             <div className="detailLike">
               <button> ♥ {post.like}</button>
+            </div>
+          </>
+        )}
+        {state && (
+          <>
+            <div className="postingHeader">
+              <div className="thumbnail">
+                <LoadThumbnail />
+              </div>
+              <div className="title">{state.submitPost.title}</div>
+            </div>
+            <div className="detailContent">
+              {state.submitPost.markdownContent}
+            </div>
+            <div className="detailLike">
+              <button> ♥ </button>
             </div>
           </>
         )}

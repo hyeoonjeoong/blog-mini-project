@@ -24,7 +24,7 @@ const Write = () => {
     if (title !== "" && markdownContent !== "") {
       let postingId = 100;
       const submitPost = { title, markdownContent, postingId };
-      console.log(submitPost);
+      //console.log(submitPost);
       navigate(`/post/${postingId}`, { state: { submitPost } });
     } else {
       alert("제목과 본문을 모두 작성해주세요.");
