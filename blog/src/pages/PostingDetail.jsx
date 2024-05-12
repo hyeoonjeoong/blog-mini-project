@@ -11,12 +11,16 @@ const PostingDetail = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    getPostingDetail(state.postingId)
-      .then((res) => {
-        console.log(res);
-        setPost(res);
-      })
-      .catch((err) => console.log(err));
+    if (state.submitPost) {
+      return;
+    } else {
+      getPostingDetail(state.postingId)
+        .then((res) => {
+          console.log(res);
+          setPost(res);
+        })
+        .catch((err) => console.log(err));
+    }
   }, []);
 
   return (
@@ -43,8 +47,7 @@ const PostingDetail = () => {
             </div>
           </>
         )}
-        {/* useEffect 조건 추가 필요 */}
-        {/* {state && (
+        {state.submitPost && (
           <>
             <div className="postingHeader">
               <div className="thumbnail">
@@ -59,7 +62,7 @@ const PostingDetail = () => {
               <button> ♥ </button>
             </div>
           </>
-        )} */}
+        )}
       </div>
     </>
   );
