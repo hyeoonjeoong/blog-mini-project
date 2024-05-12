@@ -214,9 +214,36 @@ code {
   justify-content: center;
 }
 .searchBoxContainer {
-  width: 800px;
-  height: 150px;
+  width: 700px;
+  height: 50px;
   border: 1px solid #9cafaa;
   background-color: #eeeeee;
   position: fixed;
+  z-index: 10;
+  padding: 20px;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  width: 60%;
+  height: 28px;
+  border-bottom: 1px solid #48947f;
+}
+
+.searchBoxContainer button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d6dac8;
+  color: #31363f;
+  font-weight: 500;
 }

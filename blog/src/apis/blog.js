@@ -38,3 +38,19 @@ export const getPostingLike = async (postingId) => {
     console.log(err);
   }
 };
+
+//포스팅 제목, 내용 검색
+export const searchPosting = async (searchParams) => {
+  try {
+    const res = await axios.get("/json/postingData.json");
+    const postings = res.data.postings;
+    const searchResult = postings.filter(
+      (post) =>
+        post.title.includes(searchParams) || post.content.includes(searchParams)
+    );
+    // console.log("searchResult", searchResult);
+    return searchResult;
+  } catch (err) {
+    console.log(err);
+  }
+};
