@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { searchPosting } from "../../apis/blog";
+import { searchPosting } from "../apis/blog";
+import PostCard from "../components/main/PostCard";
 
 const Search = () => {
   const [searchParams, setSearchParams] = useState("");
+  const [postingList, setPostingList] = useState([]);
 
   const handleSearch = () => {
     if (!searchParams) {
@@ -11,6 +13,7 @@ const Search = () => {
     }
     searchPosting(searchParams)
       .then((res) => {
+        setPostingList(res);
         console.log(res);
       })
       .catch((err) => console.log(err));
@@ -28,10 +31,16 @@ const Search = () => {
               type="text"
               value={searchParams}
               onChange={(e) => setSearchParams(e.target.value)}
+              placeholder="검색어를 입력하세요."
             ></input>
             <button onClick={handleSearch}>검색하기</button>
           </div>
         </div>
+      </div>
+      <div className="searchPostBox">
+        {postingList.map((post) => (
+          <PostCard key={post.postingId} post={post} />
+        ))}
       </div>
     </>
   );

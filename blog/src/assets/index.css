@@ -212,14 +212,11 @@ code {
 .searchBoxWrapper {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 .searchBoxContainer {
   width: 700px;
   height: 50px;
-  border: 1px solid #9cafaa;
-  background-color: #eeeeee;
-  position: fixed;
-  z-index: 10;
   padding: 20px;
 }
 
@@ -237,13 +234,32 @@ code {
   border-bottom: 1px solid #48947f;
 }
 
+.searchInput::placeholder {
+  text-align: center;
+  font-size: larger;
+}
+
 .searchBoxContainer button {
   padding: 10px 20px;
   cursor: pointer;
   margin-left: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #d6dac8;
+  background: none;
+  border: 1px solid #9cafaa;
   color: #31363f;
   font-weight: 500;
+}
+.searchBoxContainer button:hover {
+  background-color: #9cafaa;
+  color: #eeeeee;
+}
+
+.searchPostBox {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-content: start;
+  justify-items: center;
 }

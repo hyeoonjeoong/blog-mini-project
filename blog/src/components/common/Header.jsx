@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
-import Search from "./Search";
+import Search from "../../pages/Search";
 
 const Header = () => {
-  const [isSearch, setIsSearch] = useState(false);
-  const handleClickSearch = () => {
-    setIsSearch(true);
-  };
   return (
     <>
       <div className="header">
@@ -15,12 +11,9 @@ const Header = () => {
           <span>BlahBlog</span>
         </Link>
         <div>
-          <img
-            src={search}
-            alt="search-icon"
-            className="search"
-            onClick={handleClickSearch}
-          />
+          <Link to="search">
+            <img src={search} alt="search-icon" className="search" />
+          </Link>
           <Link to="/write">
             <button>글 작성</button>
           </Link>
@@ -29,7 +22,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      {isSearch && <Search />}
     </>
   );
 };
