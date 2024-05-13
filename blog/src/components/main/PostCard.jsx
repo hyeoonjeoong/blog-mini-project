@@ -31,7 +31,12 @@ const PostCard = ({ post }) => {
     <>
       <div className="postingCard">
         <div className="postingHeader">
-          <div> {post.title.slice(0, 15)}..</div>
+          <div>
+            {post.title.length > 15
+              ? post.title.slice(0, 15) + ".."
+              : post.title}
+          </div>
+
           <div
             onClick={() => clickLike(post)}
             style={{ color: isFavorite === true ? "#496989" : "#D6DAC8" }}
@@ -46,7 +51,11 @@ const PostCard = ({ post }) => {
             <LoadThumbnail />
           )}
 
-          <div> {post.content.slice(0, 100)}..</div>
+          <div>
+            {post.content.length > 100
+              ? post.content.slice(0, 100) + ".."
+              : post.content}
+          </div>
         </div>
         <div className="postingFooter">
           <img src={post.user.profileImg || userIcon} alt="img" />
